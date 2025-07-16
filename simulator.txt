@@ -1,0 +1,23 @@
+1. Overview
+------------------------------------------------------------
+You will debug a tiny ATM simulator program that uses if / elif / else
+logic for authentication, menu selection, and withdrawing money.
+The starter code is intentionally broken (syntax, indentation, type,
+and logic bugs). Your job: fix it so it runs correctly and handles
+common edge cases.
+
+
+2. What the Program Should Do
+------------------------------------------------------------
+• Ask the user for a numeric PIN.
+• If the PIN matches the stored PIN (default 1234), show a menu:
+    1. Check Balance
+    2. Withdraw Money
+• If user chooses 1 → print current balance.
+• If user chooses 2 → ask for withdrawal amount:
+    – If amount is <= balance and > 0, deduct and show new balance.
+    – Otherwise, print “Insufficient funds” (or invalid amount).
+• If PIN is wrong → deny access.
+• Handle invalid menu choices gracefully.
+
+
