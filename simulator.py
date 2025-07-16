@@ -16,7 +16,8 @@ if user_pin == pin:
 
     elif choice == '2':
         amount = float (input("Enter amount to withdraw: "))
-        if amount <= balance:
+        if amount <= balance and amount > 0 :
+
             balance = balance - amount
             print("Withdraw successful. New balance:", balance)
         else:
